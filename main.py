@@ -12,7 +12,13 @@ class Calculator:
         pass
 
 class Operator:
-    pass
+    SYMBOL = ""
+
+    def __init__(self):
+        pass
+
+    def calculate(self):
+        pass
 
 class Add(Operator):
     pass
