@@ -66,7 +66,7 @@ def main():
         operand1=input_getter.get_operator1(),
         operand2=input_getter.get_operator2(),
     )
-    print("Answer:", answer)
+    print("Answer :", answer)
 
 
 if __name__ == "__main__":
