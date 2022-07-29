@@ -1,8 +1,27 @@
 import os
 from decimal import Decimal
 
+
 class InputGetter:
-    pass
+    def __init__(self) -> None:
+        self.operator1 = None
+        self.operator2 = None
+        self.operation_symbol = None
+
+    def get_input(self):
+        self.operation_symbol = input("Please enter the operation symbol:")
+        self.operator1 = input("Please enter the first operator:")
+        self.operator2 = input("Please enter the second operator:")
+
+    def get_operation_symbol(self):
+        return self.operation_symbol
+
+    def get_operator1(self):
+        return self.operator1
+
+    def get_operator2(self):
+        return self.operator2
+
 
 class Calculator:
     def __init__(self, operations):
