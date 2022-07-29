@@ -17,18 +17,19 @@ class Operator:
     def __init__(self):
         pass
 
-    def calculate(self, op1, op2):
-        self.op1 = op1
-        self.op2 = op2
+    def calculate(self, operand1, operand2):
+        pass
 
 class Add(Operator):
     SYMBOL = "+"
 
-    def calculate(self, op1, op2):
-        return op1 + op2
+    def calculate(self, operand1, operand2):
+        return operand1 + operand2
 
 class Sub(Operator):
-    pass
+    SYMBOL = "-"
+    def calculate(self, operand1, operand2):
+        return operand1 - operand2
 
 if __name__ == "__main__":
     pass
