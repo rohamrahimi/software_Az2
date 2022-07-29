@@ -10,8 +10,8 @@ class InputGetter:
 
     def get_input(self):
         self.operation_symbol = input("Please enter the operation symbol:")
-        self.operator1 = input("Please enter the first operator:")
-        self.operator2 = input("Please enter the second operator:")
+        self.operator1 = int(input("Please enter the first operator:"))
+        self.operator2 = int(input("Please enter the second operator:"))
 
     def get_operation_symbol(self):
         return self.operation_symbol
@@ -65,6 +65,9 @@ def main():
             sub_operator,
         ]
     )
+
+    input_getter.get_input()
+
     answer = calculator.calculate(
         operation=input_getter.get_operation_symbol(),
         operand1=input_getter.get_operator1(),
