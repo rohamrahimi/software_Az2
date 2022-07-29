@@ -17,14 +17,16 @@ class Operator:
     def __init__(self):
         pass
 
-    def calculate(self):
+    def calculate(self, operand1, operand2):
         pass
 
 class Add(Operator):
     pass
 
 class Sub(Operator):
-    pass
+    SYMBOL = "-"
+    def calculate(self, operand1, operand2):
+        return operand1 - operand2
 
 if __name__ == "__main__":
     pass
