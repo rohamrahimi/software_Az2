@@ -24,11 +24,15 @@ class InputGetter:
 
 
 class Calculator:
-    def __init__(self, operations):
-        self.operations = operations
+    def __init__(self, operators):
+        self.operators = operators
 
     def calculate(self, operation, operand1, operand2):
-        pass
+        for operator in self.operators:
+            if operation == operator.SYMBOL:
+                return operator.calculate(operand1, operand2)
+        
+        raise Exception("Invalid operation")
 
 class Operator:
     SYMBOL = ""
