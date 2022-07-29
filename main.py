@@ -60,7 +60,7 @@ def main():
     add_operator = Add()
     sub_operator = Sub()
     calculator = Calculator(
-        operations=[
+        operators=[
             add_operator,
             sub_operator,
         ]
