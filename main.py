@@ -68,12 +68,15 @@ def main():
 
     input_getter.get_input()
 
+    print("Calculating.....")
+
     answer = calculator.calculate(
         operation=input_getter.get_operation_symbol(),
         operand1=input_getter.get_operator1(),
         operand2=input_getter.get_operator2(),
     )
-    print("Answer:", answer)
+    
+    print("The Answer is:", answer)
 
 
 if __name__ == "__main__":
