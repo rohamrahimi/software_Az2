@@ -17,11 +17,15 @@ class Operator:
     def __init__(self):
         pass
 
-    def calculate(self):
-        pass
+    def calculate(self, op1, op2):
+        self.op1 = op1
+        self.op2 = op2
 
 class Add(Operator):
-    pass
+    SYMBOL = "+"
+
+    def calculate(self, op1, op2):
+        return op1 + op2
 
 class Sub(Operator):
     pass
