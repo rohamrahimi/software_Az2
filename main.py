@@ -54,5 +54,24 @@ class Sub(Operator):
     def calculate(self, operand1, operand2):
         return operand1 - operand2
 
+
+def main():
+    input_getter = InputGetter()
+    add_operator = Add()
+    sub_operator = Sub()
+    calculator = Calculator(
+        operations=[
+            add_operator,
+            sub_operator,
+        ]
+    )
+    answer = calculator.calculate(
+        operation=input_getter.get_operation_symbol(),
+        operand1=input_getter.get_operator1(),
+        operand2=input_getter.get_operator2(),
+    )
+    print("Answer:", answer)
+
+
 if __name__ == "__main__":
-    pass
+    main()
